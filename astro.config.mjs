@@ -54,6 +54,7 @@ function getSiteUrl() {
 // https://astro.build/config
 export default defineConfig({
 	site: getSiteUrl(),
+	base: process.env.BASE_URL || '/',
 	output: 'static',
 	adapter: await getAdapter(),
 	redirects: { '/home': '/' },
