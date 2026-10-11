@@ -28,7 +28,7 @@ jobs:
 
       - name: Build TinaCMS & Astro
         env:
-          TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
+          TINA_PUBLIC_CLIENT_ID: ${{ secrets.PUBLIC_TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
           SITE_URL: 'https://${{ github.repository_owner }}.github.io'
           BASE_URL: '/${{ github.event.repository.name }}/'
