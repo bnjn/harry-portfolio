@@ -3,7 +3,7 @@
     "title": "TinaCMS + Astro",
     "description": "Welcome to my website!",
     "siteOwner": "TinaCMS",
-    "logo": "/orange-llama.svg"
+    "logo": "./orange-llama.svg"
   },
   "nav": [
     {
