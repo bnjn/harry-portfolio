@@ -55,6 +55,7 @@ function getSiteUrl() {
 export default defineConfig({
 	site: getSiteUrl(),
 	base: process.env.BASE_URL || '/',
+	trailingSlash: 'always',
 	output: 'static',
 	adapter: await getAdapter(),
 	redirects: { '/home': '/' },
@@ -64,6 +65,7 @@ export default defineConfig({
 		// separate render-blocking <link>. Astro's default ('auto') only inlines
 		// stylesheets under ~4 KiB, leaving ours blocking first paint on mobile.
 		inlineStylesheets: 'always',
+		format: 'directory',
 	},
 	// Tina Cloud rewrites CMS image src to assets.tina.io; let Astro
 	// fetch those URLs at build time so <Image> can transcode + resize them.
