@@ -76,7 +76,8 @@ export default defineConfig({
 		remotePatterns: [{ protocol: 'https', hostname: 'assets.tina.io' }],
 	},
 	vite: {
-		plugins: [tailwindcss(), tinaAdminDevRedirect()],
+		// plugins: [tailwindcss(), tinaAdminDevRedirect()],
+		plugins: [tailwindcss()],
 		// Bundle @tinacms/astro into the SSR build instead of resolving it
 		// per-module on every cold request — otherwise each
 		// `import TinaMarkdown from '@tinacms/astro/TinaMarkdown.astro'`
