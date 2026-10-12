@@ -5,6 +5,8 @@ import PageBody from '../components/islands/PageBody.astro';
 import { getConfig, getPage, listPages } from '../lib/data';
 import { islands } from '../lib/islands';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
 	const pages = await listPages();
 	return pages
