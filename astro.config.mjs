@@ -57,7 +57,7 @@ export default defineConfig({
 	base: process.env.BASE_URL || '/',
 	trailingSlash: 'always',
 	output: 'static',
-	adapter: await getAdapter(),
+	// adapter: await getAdapter(),
 	redirects: { '/home': '/' },
 	integrations: [mdx(), sitemap(), icon(), tina()],
 	build: {
