@@ -8,15 +8,15 @@
   "nav": [
     {
       "title": "Home",
-      "link": "/"
+      "link": "./"
     },
     {
       "title": "Blog",
-      "link": "/blog"
+      "link": "./blog"
     },
     {
       "title": "About",
-      "link": "/about"
+      "link": "./about"
     }
   ],
   "contactLinks": [
